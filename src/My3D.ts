@@ -6,7 +6,7 @@ class Rotate {
   static x(vec:Vec3, theta:number) {
     const ts = Math.sin(theta);
     const tc = Math.cos(theta);
-    
+
     const x = vec[0];
     const y = vec[1];
     const z = vec[2];
@@ -22,7 +22,7 @@ class Rotate {
   static y(vec:Vec3, theta:number) {
     const ts = Math.sin(theta);
     const tc = Math.cos(theta);
-    
+
     const x = vec[0];
     const y = vec[1];
     const z = vec[2];
@@ -39,7 +39,7 @@ class Rotate {
   static z(vec:Vec3, theta:number) {
     const ts = Math.sin(theta);
     const tc = Math.cos(theta);
-    
+
     const x = vec[0];
     const y = vec[1];
     const z = vec[2];
@@ -87,7 +87,7 @@ class My3D {
     return Math.sqrt(ret);
   }
 
-  static normalize(v0:Vec3) {
+  static normalize(v0:Vec3):Vec3 {
     const mag = My3D.mag(v0);
     const x = v0[0] / mag;
     const y = v0[1] / mag;

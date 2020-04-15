@@ -11,7 +11,7 @@ import path from 'path';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-  input: 'src/main.ts',
+  input: 'typescript-dist/main.js',
   output: [{
     file: 'public/bundle.js',
     format: 'iife', // immediately-invoked function expression — suitable for <script> tags
